@@ -16,6 +16,8 @@ import { CarouselComponent } from './exercise2/carousel/carousel.component';
 import { CollectionComponent } from './exercise2/collection/collection.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { FormsModule } from '@angular/forms';
+import { DirectivesComponent } from './directives/directives.component';
+import { StructuralComponent } from './directives/structural/structural.component';
 
 // @NgModule: Decorator
 // Các options trong decorator được gọi là metadata
@@ -35,6 +37,8 @@ import { FormsModule } from '@angular/forms';
     CarouselComponent,
     CollectionComponent,
     DataBindingComponent,
+    DirectivesComponent,
+    StructuralComponent,
   ],
   imports: [
     // Nơi khai báo những module được sử dụng trong module này
