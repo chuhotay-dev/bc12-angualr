@@ -18,6 +18,9 @@ import { DataBindingComponent } from './data-binding/data-binding.component';
 import { FormsModule } from '@angular/forms';
 import { DirectivesComponent } from './directives/directives.component';
 import { StructuralComponent } from './directives/structural/structural.component';
+import { AttributeComponent } from './directives/attribute/attribute.component';
+import { HightlightDirective } from './my-directives/hightlight.directive';
+import { HoverButtonDirective } from './my-directives/hover-button.directive';
 
 // @NgModule: Decorator
 // Các options trong decorator được gọi là metadata
@@ -39,6 +42,9 @@ import { StructuralComponent } from './directives/structural/structural.componen
     DataBindingComponent,
     DirectivesComponent,
     StructuralComponent,
+    AttributeComponent,
+    HightlightDirective,
+    HoverButtonDirective,
   ],
   imports: [
     // Nơi khai báo những module được sử dụng trong module này
