@@ -36,6 +36,16 @@ import { SecondComponent } from './demo-service/second/second.component';
 import { AccountManagementComponent } from './demo-service/account-management/account-management.component';
 import { AccountListComponent } from './demo-service/account-management/account-list/account-list.component';
 import { AddAccountComponent } from './demo-service/account-management/add-account/add-account.component';
+import { HomeComponent } from './components/home/home.component';
+import { TheaterComponent } from './components/theater/theater.component';
+import { ReviewComponent } from './components/review/review.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { HttpClientModule } from '@angular/common/http';
+import { MovieDetailComponent } from './components/movie-detail/movie-detail.component';
+import { FormsComponent } from './forms/forms.component';
+import { TemplateDrivenComponent } from './forms/template-driven/template-driven.component';
+import { ReactiveComponent } from './forms/reactive/reactive.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
 // @NgModule: Decorator
 // Các options trong decorator được gọi là metadata
@@ -69,6 +79,15 @@ import { AddAccountComponent } from './demo-service/account-management/add-accou
     AccountManagementComponent,
     AccountListComponent,
     AddAccountComponent,
+    HomeComponent,
+    TheaterComponent,
+    ReviewComponent,
+    ContactComponent,
+    MovieDetailComponent,
+    FormsComponent,
+    TemplateDrivenComponent,
+    ReactiveComponent,
+    PageNotFoundComponent,
   ],
   imports: [
     // Nơi khai báo những module được sử dụng trong module này
@@ -78,7 +97,8 @@ import { AddAccountComponent } from './demo-service/account-management/add-accou
     BrowserAnimationsModule,
     MatButtonModule,
     MatDividerModule,
-    MatIconModule
+    MatIconModule,
+    HttpClientModule
   ],
   // Nơi khai báo service
   providers: [],
