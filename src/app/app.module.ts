@@ -21,7 +21,7 @@ import { FooterEx2Component } from './exercise2/footer-ex2/footer-ex2.component'
 import { CarouselComponent } from './exercise2/carousel/carousel.component';
 import { CollectionComponent } from './exercise2/collection/collection.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DirectivesComponent } from './directives/directives.component';
 import { StructuralComponent } from './directives/structural/structural.component';
 import { AttributeComponent } from './directives/attribute/attribute.component';
@@ -98,7 +98,8 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
     MatButtonModule,
     MatDividerModule,
     MatIconModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   // Nơi khai báo service
   providers: [],

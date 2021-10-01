@@ -10,15 +10,36 @@
         ngModel
         required
         #email="ngModel"
+        pattern=""
         (keyup)="log(email)"
       />
-      <div *ngIf="email.errors && (email.touched || email.dirty)" class="alert alert-danger">
+      <div
+        *ngIf="email.errors && (email.touched || email.dirty)"
+        class="alert alert-danger"
+      >
         <div *ngIf="email.errors.required">Vui lòng nhập email!</div>
+        <div *ngIf="email.errors.pattern">Email không hợp lệ!</div>
       </div>
     </div>
     <div class="form-group">
       <label>Password</label>
-      <input type="password" class="form-control" name="password" ngModel />
+      <input
+        type="password"
+        class="form-control"
+        name="password"
+        ngModel
+        required
+        minlength="7"
+        maxlength="12"
+        #password="ngModel"
+      />
+      <div
+        *ngIf="password.errors && (password.touched || password.dirty)"
+        class="alert alert-danger"
+      >
+        <div *ngIf="password.errors.required">Vui lòng nhập mật khẩu!</div>
+        <div *ngIf="password.errors.minlength || password.errors.maxlength">Mật khẩu phải từ 7 đến 12 kí tự!</div>
+      </div>
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
   </form>
